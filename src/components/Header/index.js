@@ -1,5 +1,5 @@
 import * as C from './style';
-import logo from '../../assets/K_GDoces-.png'
+import logo from '../../assets/logo/K_GDoces-.png'
 import {FaWhatsapp, FaInstagram} from 'react-icons/fa'
 export default function Header(){
     return(
