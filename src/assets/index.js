@@ -17,7 +17,6 @@ import img17 from '../assets/images/img-17.jpg'
 import img18 from '../assets/images/img-18.jpg'
 import img19 from '../assets/images/img-19.jpg'
 import img20 from '../assets/images/img-20.jpg'
-import img21 from '../assets/images/img-21.jpg'
 import img22 from '../assets/images/img-22.jpg'
 import img23 from '../assets/images/img-23.jpg'
 import img24 from '../assets/images/img-24.jpg'
@@ -42,7 +41,6 @@ export const myGallery = [
     {src: img18, title: 'img-18'},
     {src: img19, title: 'img-19'},
     {src: img20, title: 'img-20'},
-    {src: img21, title: 'img-21'},
     {src: img22, title: 'img-22'},
     {src: img23, title: 'img-23'},
     {src: img24, title: 'img-24'},

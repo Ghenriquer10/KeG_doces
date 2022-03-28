@@ -1,23 +1,43 @@
 import styled from 'styled-components';
-
+import background from '../../assets/background/backgroundegg.jpg'
 
 export const Container = styled.div`
     height: 100%;
     width: 100%;
-    background-color: #ebe3dc;
+    background-size: cover;
+    background-image: url(${background});
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     align-items: center;
     flex-direction: column;
-`;
+    
+    `;
 
-export const Content = styled.div`
+export const CarousselContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     width: 80%;
-    height: 500px;
-    margin-top: 50px;
+    height: 400px;
+    border-radius: 5%;
+`;
+
+export const Card = styled.div`
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 30px;
+    border: 1px solid red;
+    
+    img {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+}
+
 `;
