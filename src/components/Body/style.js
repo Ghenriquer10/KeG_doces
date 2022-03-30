@@ -17,8 +17,13 @@ export const CarousselContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 400px;
+    width: 400px;
+    height: 600px;
     border-radius: 5%;
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid brown;
+    .d-block{
+        border-radius: 10px;
+    }
 `;
 

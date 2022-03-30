@@ -8,12 +8,11 @@ export default function Body(){
         <C.Container>
             <p>Os mais bonitos e deliciosos ovos de páscoa!!!</p>
             <C.CarousselContainer>
-                <Carousel fade>
+                <Carousel interval={2000} dark>
                     {verticalGallery.map((item) => {
                         return(
                             <Carousel.Item>
-                                <img alt={item.title} src={item.src}/>
-                                <p>{item.title}</p>
+                                <img className='d-block' style={{height: '500px', width: '400px'}} alt={item.title} src={item.src}/>
                             </Carousel.Item>
                         )
                     })}
