@@ -1,30 +1,20 @@
 import React from 'react';
 import * as C from './style';
-import Carousel from 'react-elastic-carousel';
-import './style.css';
+import { Carousel } from 'react-bootstrap';
+import {verticalGallery} from '../../assets/index'
 
-import { myGallery } from '../../assets/index';
-
-export default function Body(){
-
-    const breakPoints = [
-        { width: 1, itemsToShow: 1 },
-        { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-        { width: 768, itemsToShow: 4 },
-        { width: 1200, itemsToShow: 5 }
-      ];
-
-      
+export default function Body(){      
     return(
         <C.Container>
             <p>Os mais bonitos e deliciosos ovos de páscoa!!!</p>
             <C.CarousselContainer>
-                <Carousel breakPoints={breakPoints}>
-                    {myGallery.map((item) => {
+                <Carousel fade>
+                    {verticalGallery.map((item) => {
                         return(
-                            <C.Card key={item.src}>
+                            <Carousel.Item>
                                 <img alt={item.title} src={item.src}/>
-                            </C.Card>
+                                <p>{item.title}</p>
+                            </Carousel.Item>
                         )
                     })}
                 </Carousel>
