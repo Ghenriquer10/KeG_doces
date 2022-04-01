@@ -1,29 +1,53 @@
 import styled from 'styled-components';
-import background from '../../assets/background/backgroundegg.jpg'
 
 export const Container = styled.div`
-    height: 100%;
+    height: 100hv;
     width: 100%;
-    background-size: cover;
-    background-image: url(${background});
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
     `;
 
 export const CarousselContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 100%;
     height: 600px;
-    border-radius: 5%;
-    background-color: rgba(0,0,0,0.7);
-    border: 2px solid brown;
-    .d-block{
+    background-color: rgba(0,0,0,0.2);
+    flex-direction: column; 
+    margin-bottom: 50px;
+
+    .slider{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    
+    .slider-div{
+        width: 100% !important;
+        height: 600px;
+        display: flex !important; 
+        align-items: center !important;
+        justify-content: center !important;
+        object-fit: contain;
+    }
+    
+    
+    img{
+        width: 400px;
+        height: 500px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         border-radius: 10px;
+    }
+
+    img:hover{
+        transition: all 1s;
+        transform: scale(1.1);
     }
 `;
 
