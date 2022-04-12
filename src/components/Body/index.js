@@ -8,11 +8,11 @@ import Slider from "react-slick";
 
 export default function Body(){  
     
-    var settings = {
+    const settingsHorizontal = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         initialSlide: 0,
         className: 'slider',
@@ -42,12 +42,47 @@ export default function Body(){
             }
           ]
       };
+
+      const settingsVertical = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        className: 'slider',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 400,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+      };
     
     return(
         <C.Container>
             <p>Os mais bonitos e deliciosos ovos de páscoa!!!</p>
             <C.CarousselContainer>
-                <Slider {...settings} style={{maxWidth:'90%'}}>
+                <Slider {...settingsVertical} style={{maxWidth:'90%'}}>
                     {verticalGallery.map((item)=> {
                         return(
                             <div className='slider-div' key={item.title}>
@@ -58,7 +93,7 @@ export default function Body(){
                 </Slider>
             </C.CarousselContainer>
             <C.CarousselContainer>
-                <Slider {...settings} style={{maxWidth:'90%'}}>
+                <Slider {...settingsHorizontal} style={{maxWidth:'90%'}}>
                     {horizontalGallery.map((item)=> {
                         return(
                             <div className='slider-div-2' key={item.title}>
