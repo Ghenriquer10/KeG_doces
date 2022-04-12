@@ -9,6 +9,13 @@ export const Container = styled.div`
     flex-direction: column;
     background-color: brown;
 
+    
+    p{
+        font-size: 4.5em;
+        color: #FFF;
+        margin-top: 10px;
+    }
+
     `;
 
 export const CarousselContainer = styled.div`
@@ -18,8 +25,7 @@ export const CarousselContainer = styled.div`
     width: 100%;
     height: 550px;
     flex-direction: column; 
-    margin-bottom: 50px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
     
     .slider{
         display: flex !important;

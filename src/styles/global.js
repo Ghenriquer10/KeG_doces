@@ -14,6 +14,11 @@ export default createGlobalStyle`
     html, body, #root{
         height: 100%;
     }
+
+    p{
+        font-family: 'Beau Rivage', cursive;
+    }
+    
     ul{
         list-style-type: none;
     }

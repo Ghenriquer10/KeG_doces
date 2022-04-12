@@ -19,15 +19,17 @@ width: 100%;
 flex-direction: column;
 img{
     width: 150px;
-    border: 2px solid brown;
     height: 100px;
+    border: 2px solid brown;
     border-radius: 30%;
     margin-bottom: 10px;
+    margin-top: 50px;
 }
 
     p {
-        font-size: 2em;
+        font-size: 3em;
         color: brown;
+        font-weight: bold;
     }
     `;
 
