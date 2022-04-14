@@ -9,6 +9,18 @@ export const Container = styled.div`
     flex-direction: column;
     background-color: brown;
 
+    .tittle-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        img:nth-child(2){
+            height: 100px;
+            width: 100px;
+        }
+    }
+    
     
     p{
         font-size: 4.5em;
@@ -16,7 +28,18 @@ export const Container = styled.div`
         margin-top: 10px;
     }
 
-    `;
+    @media(max-width: 700px) {
+        .tittle-container{
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+`;
 
 export const CarousselContainer = styled.div`
     display: flex;
@@ -54,36 +77,35 @@ export const CarousselContainer = styled.div`
             transition: all 1s;
             transform: scale(1.1);
         }
+
+        @media (max-width: 400px) {
+            img{
+                height: 350px;
+                width: 250px;
+            }
+        }
         
     }
 
-    .slider-div-2{
-        width: 550px;
-        height: 400px;
-        object-fit: contain;
-        display: flex !important; 
-        align-items: center !important;
-        justify-content: center !important;
-        
-        img{
-            width: 550px;
-            height: 350px;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            border-radius: 10px;
-        }
-        
-        img:hover{
-            transition: all 1s;
-            transform: scale(1.07);
-            border-radius: 15%;
-        }
-    }
 
 .slick-prev:before, .slick-next:before{
     opacity: .75;
     color: #FFF;
 }
+
+@media (max-width: 400px) {
+    .slick-prev:before{
+        margin-left: 20px;
+    }
+    .slick-next:before{
+        margin-left: -40px;
+    }
+}
+
 `;
+
+
+
+
+
 

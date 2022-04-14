@@ -1,8 +1,6 @@
 import {createGlobalStyle} from 'styled-components'
-import Hurricane from './Fonts';
 
 export default createGlobalStyle`
-    ${Hurricane}
     *{
         margin: 0;
         padding: 0;
@@ -13,6 +11,13 @@ export default createGlobalStyle`
 
     html, body, #root{
         height: 100%;
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased !important;
+        @media (max-width: 700px) {
+            overflow-x: hidden;
+        }
     }
 
     p{
