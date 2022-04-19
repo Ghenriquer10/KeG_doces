@@ -7,7 +7,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #671B0B;
     
     @media (max-width: 700px){
         flex-direction: column;
@@ -35,7 +35,7 @@ export const Logo = styled.div`
 
     p {
         font-size: 3em;
-        color: brown;
+        color: #FFF;
         font-weight: bold;
     }
 
@@ -59,7 +59,7 @@ export const Contacts = styled.div`
     .label{
         font-size: 1.5em;
         margin-bottom: 5px;
-        color: brown;
+        color: #FFF;
     }
 
     .social-media{

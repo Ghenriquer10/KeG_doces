@@ -48,7 +48,7 @@ export const CarousselContainer = styled.div`
     width: 100%;
     height: 550px;
     flex-direction: column; 
-    background-color: rgba(0,0,0,0.5);
+    background-color: #F7ECEA;
     
     .slider{
         display: flex !important;
@@ -90,7 +90,7 @@ export const CarousselContainer = styled.div`
 
 .slick-prev:before, .slick-next:before{
     opacity: .75;
-    color: #FFF;
+    color: brown;
 }
 
 @media (max-width: 400px) {

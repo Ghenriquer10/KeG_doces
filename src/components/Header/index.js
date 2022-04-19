@@ -14,9 +14,9 @@ export default function Header(){
                         <p>Contatos:</p>
                     </div>
                     <div className='social-media'>
-                        <a href='https://www.instagram.com/keg.lembracinhas/'><FaInstagram size={40}/></a>
-                        <a href='http://api.whatsapp.com/send?phone=5561993821683'><FaWhatsapp size={40}/></a>
-                        <a href='http://api.whatsapp.com/send?phone=5561993821683'><FaWhatsapp size={40}/></a>
+                        <a href='https://www.instagram.com/keg.lembracinhas/'><FaInstagram size={30}/></a>
+                        <a href='http://api.whatsapp.com/send?phone=5561993821683'><FaWhatsapp size={30}/></a>
+                        <a href='http://api.whatsapp.com/send?phone=5561993821683'><FaWhatsapp size={30}/></a>
                     </div>
                 </C.Contacts>
             </C.Container>

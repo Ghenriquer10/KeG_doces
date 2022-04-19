@@ -3,16 +3,16 @@ import styled from 'styled-components';
 export const Container = styled.div`
     height: 200px;
     width: 100%;
-    background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     color: #FFF;
+    background-color: #671B0B;
 
     @media (max-width: 700px) {
         flex-direction: column;
-        height: 500px;
+        height: 350px;
         p{
             text-align: center;
         }
